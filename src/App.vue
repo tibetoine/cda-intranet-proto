@@ -31,7 +31,7 @@
         </v-list>
       </v-navigation-drawer>
 
-      <v-app-bar app color="indigo" dark>
+      <v-app-bar app dark color="primary">
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         <v-toolbar-title>Intranet - Chantier de l'atlantique - v0.1.8</v-toolbar-title>
       </v-app-bar>
@@ -53,8 +53,7 @@ export default {
     showUpdateUI: false,
     menuItems: [
       { icon: "mdi-home", path: "/home", text: "home" },
-      { icon: "mdi-link", path: "/link", text: "Liens" },
-      { icon: "mdi-link", path: "/cards", text: "Cartes" },
+      { icon: "mdi-view-grid", path: "/cards", text: "Cartes" },
     ],
   }),
   created() {
