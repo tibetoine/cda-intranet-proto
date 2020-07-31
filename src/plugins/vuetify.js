@@ -11,7 +11,8 @@ export default new Vuetify({
                 secondary: '#00c5e3',
                 accent: '#8c9eff',
                 error: '#b71c1c',
-            },
-        },
+                anchor: '#00c5e3'
+            }
+        }
     }
 });

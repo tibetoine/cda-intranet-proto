@@ -19,7 +19,7 @@
       <v-navigation-drawer v-model="drawer" app>
         <v-list dense>
           <template v-for="item in menuItems">
-            <v-list-item link v-bind:key="item.path" :to="item.path">
+            <v-list-item href :key="item.path" :to="item.path">
               <v-list-item-action>
                 <v-icon>{{ item.icon }}</v-icon>
               </v-list-item-action>
@@ -74,4 +74,11 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+  .v-list-item--active {
+    color : #005d81 !important;
+  }
+  
+</style>
 

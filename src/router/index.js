@@ -6,8 +6,8 @@ import Liens from '../views/Liens.vue'
 Vue.use(VueRouter)
 
 const routes = [  
-  { path: '/home', component: Home },
-  { path: '/cards', component: Liens },
+  { path: '/home', component: Home, name: 'home' },
+  { path: '/cards', component: Liens , name: 'cards'},
 ]
 
 const router = new VueRouter({
